@@ -19,7 +19,7 @@ jobs:
         with:
           commit_message: "[Bot] Update all commit package file"
           commit_user_name: AdonisLL
-          commit_user_email: adonisll
+          commit_user_email: adonis.latham@gmail.com
           commit_author: AdonisLL
       - run: npm ci
         working-directory: sample-packages/npm
