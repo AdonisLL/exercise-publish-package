@@ -15,6 +15,12 @@ jobs:
           node-version: 14
       - run: npm install
         working-directory: sample-packages/npm
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "[Bot] Update all commit package file"
+          commit_user_name: AdonisLL
+          commit_user_email: adonisll
+          commit_author: AdonisLL
       - run: npm ci
         working-directory: sample-packages/npm
       - run: npm test
